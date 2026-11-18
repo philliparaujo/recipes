@@ -27,7 +27,9 @@ Source layout: `shared.mjs` holds all resolve/format logic and is used by the bu
 
 Phone layout (<= 640px): catalog tables become stacked cards (headings become sort pills), the ingredient filter starts collapsed, a floating bar shows live cost / calories / protein on recipe pages and a shopping-list shortcut on the list page, and every control is at least 44px. A web manifest and icon allow adding the site to a home screen (no service worker, so it is not offline).
 
-Not started: images, GitHub Pages deployment via Actions.
+Deployment: `.github/workflows/pages.yml` builds and publishes `_site/` to GitHub Pages on every push to `main` (repo Settings > Pages > Source must be "GitHub Actions").
+
+Not started: images.
 
 ## Guidelines
 
