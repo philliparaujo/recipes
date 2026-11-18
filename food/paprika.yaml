@@ -1,0 +1,9 @@
+id: paprika
+display_name: "Paprika"
+brand: "McCormick"
+category: spice
+package: { amount: 2.12, unit: oz, equals: { amount: 26, unit: tsp } }
+owned: true
+cost_per_unit: { amount: 0.23, unit: "tsp" }
+nutrition: { unit: "tsp", calories: 6, protein_g: 0.3, fat_g: 0.3, carbs_g: 1.2 }
+estimated: [cost_per_unit, nutrition, package]

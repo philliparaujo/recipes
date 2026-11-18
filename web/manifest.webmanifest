@@ -1,0 +1,11 @@
+{
+  "name": "Recipes",
+  "short_name": "Recipes",
+  "description": "Recipe costs, nutrition and swaps",
+  "start_url": "index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#161616",
+  "theme_color": "#1d4fd7",
+  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}

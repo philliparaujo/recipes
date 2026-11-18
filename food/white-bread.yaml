@@ -1,0 +1,9 @@
+id: white-bread
+display_name: "White Bread"
+category: grain
+owned: true
+package: { amount: 20, unit: unit }
+cost_per_unit: { amount: 0.15, unit: "unit" }
+nutrition: { unit: "unit", calories: 75, protein_g: 2.5, fat_g: 1, carbs_g: 14 }
+estimated: [cost_per_unit, nutrition, package]
+count_label: { one: "slice", other: "slices" }

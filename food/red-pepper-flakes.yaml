@@ -1,0 +1,9 @@
+id: red-pepper-flakes
+display_name: "Red Pepper Flakes"
+brand: "McCormick"
+category: spice
+package: { amount: 1.5, unit: oz, equals: { amount: 24, unit: tsp } }
+owned: true
+cost_per_unit: { amount: 0.19, unit: "tsp" }
+nutrition: { unit: "tsp", calories: 6, protein_g: 0.3, fat_g: 0.3, carbs_g: 1 }
+estimated: [cost_per_unit, nutrition, package]

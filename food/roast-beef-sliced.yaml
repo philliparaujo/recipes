@@ -1,0 +1,9 @@
+id: roast-beef-sliced
+display_name: "Roast Beef (thin sliced, pre-cooked)"
+brand: "Kirkland"
+category: protein
+package: { amount: 14, unit: "oz" }
+owned: true
+cost_per_unit: { amount: 0.45, unit: "oz" }
+nutrition: { unit: "oz", calories: 45, protein_g: 7, fat_g: 1.5, carbs_g: 0.3 }
+estimated: [cost_per_unit, nutrition]

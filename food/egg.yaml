@@ -1,0 +1,9 @@
+id: egg
+display_name: "Egg (large)"
+category: protein
+owned: true
+package: { amount: 12, unit: unit }
+cost_per_unit: { amount: 0.4, unit: "unit" }
+nutrition: { unit: "unit", calories: 72, protein_g: 6.3, fat_g: 4.8, carbs_g: 0.4 }
+estimated: [cost_per_unit, nutrition, package]
+count_label: { one: "egg", other: "eggs" }

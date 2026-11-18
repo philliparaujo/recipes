@@ -1,0 +1,8 @@
+id: jasmine-rice
+display_name: "Jasmine Rice (dry)"
+category: grain
+owned: true
+package: { amount: 5, unit: lb, equals: { amount: 12, unit: cup } }
+cost_per_unit: { amount: 0.8, unit: "cup" }
+nutrition: { unit: "cup", calories: 675, protein_g: 13, fat_g: 1, carbs_g: 148 }
+estimated: [cost_per_unit, nutrition, package]

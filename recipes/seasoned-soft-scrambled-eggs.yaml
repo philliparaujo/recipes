@@ -1,0 +1,50 @@
+id: seasoned-soft-scrambled-eggs
+title: "Seasoned Soft Scrambled Eggs"
+summary: "Creamy, fluffy eggs with a savory spice blend. Just eggs, pantry seasonings, and a little butter."
+servings: 1
+
+ingredients:
+  - id: egg
+    label: Egg
+    food: egg
+    amount: 4
+    unit: unit
+    prep_minutes: 2
+    cook_minutes: 4
+    cookware: [tag:nonstick, nylon-tools-4pc]
+    seasonings:
+      - { food: salt, amount: 0.5, unit: tsp }
+      - { food: black-pepper, amount: 0.33, unit: tsp }
+      - { food: garlic-powder, amount: 0.33, unit: tsp }
+      - { food: paprika, amount: 0.33, unit: tsp }
+
+  - id: fat
+    label: Cooking fat
+    amount: 1
+    unit: tbsp
+    options:
+      - food: butter
+      - food: canola-oil
+
+  - id: ham
+    label: Ham
+    optional: true
+    amount: 2   # slices
+    unit: unit
+    prep_minutes: 2   # cut into tiny pieces
+    options:
+      - food: ham-sliced
+
+method:
+  - text: "Cut the ham into tiny pieces."
+    only_if: { ham: ham-sliced }
+  - "Whisk the eggs hard with the salt, black pepper, garlic powder and paprika until fully combined and slightly frothy."
+  - text: "Stir the chopped ham into the whisked eggs."
+    only_if: { ham: ham-sliced }
+  - "Heat the {{food:fat}} in a nonstick skillet over medium-low heat until it foams or shimmers."
+  - "Pour in the eggs, let them sit a few seconds, then gently push from the edges to the center with a spatula to form soft curds."
+  - "Pull off the heat while the eggs still look slightly wet; they finish cooking from residual heat. Serve right away."
+
+notes:
+  - "Low heat is the key to creamy eggs."
+  - "Swap the seasonings freely: chili flakes, cumin, onion powder, Italian herbs, or everything bagel seasoning all work."

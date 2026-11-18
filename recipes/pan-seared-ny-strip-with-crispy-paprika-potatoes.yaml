@@ -1,0 +1,59 @@
+id: pan-seared-ny-strip-with-crispy-paprika-potatoes
+title: "Pan-Seared NY Strip with Crispy Paprika Potatoes"
+summary: "One 10.5\" frypan, pantry seasonings only. Crispy russets with a garlicky, peppery steak."
+servings: 2
+
+ingredients:
+  - id: steak
+    label: Steak
+    food: beef-steak-choice-angus
+    amount: 1
+    unit: lb
+    prep_minutes: 5   # pat dry and season, then rest at room temperature
+    cook_minutes: 8
+    cookware: [frypan-10-5in, nylon-tools-4pc]
+    seasonings:
+      - { food: salt, amount: 1, unit: tsp }
+      - { food: black-pepper, amount: 1, unit: tsp }
+      - { food: garlic-powder, amount: 0.5, unit: tsp }
+      - { food: canola-oil, amount: 1, unit: tbsp }
+      - { food: canola-oil, amount: 1, unit: tsp }   # olive oil, to finish
+
+  - id: potatoes
+    label: Potatoes
+    food: potato-russet
+    amount: 1   # one russet is about 1 lb
+    unit: unit
+    prep_minutes: 10   # cut, then steam-dry after parboiling
+    cook_minutes: 21   # parboil about 10, crisp about 11
+    cookware: [saucepan-2qt-covered, frypan-10-5in, nylon-tools-4pc]
+    seasonings:
+      - { food: salt, amount: 1, unit: tbsp }    # boiling water
+      - { food: salt, amount: 0.5, unit: tsp }
+      - { food: canola-oil, amount: 2, unit: tbsp }
+      - { food: paprika, amount: 1, unit: tsp }
+      - { food: onion-powder, amount: 0.5, unit: tsp }
+      - { food: garlic-powder, amount: 0.5, unit: tsp }
+
+  - id: heat
+    label: Heat
+    optional: true
+    amount: 1
+    unit: pinch
+    options:
+      - food: red-pepper-flakes
+
+method:
+  - "Pat the steak very dry and rub with the salt, black pepper and garlic powder. Let it sit at room temperature while you do the potatoes."
+  - "Cover the cubed potatoes with cold water in the saucepan, add the salt, bring to a boil, then simmer until just fork-tender at the edges."
+  - "Drain well and steam-dry in a colander for a couple of minutes. Toss gently with the paprika, onion powder, garlic powder and salt."
+  - "Heat the oil in the frypan over medium-high. Add the potatoes in a single layer and turn only every 3 to 4 minutes, until deeply golden and crisp, about 11 minutes. Move to a plate and cover loosely."
+  - "Wipe out the pan, add the oil for the steak, and heat until shimmering but not smoking, since the nonstick coating does not like extreme heat. Cook the steak 3 to 4 minutes per side for medium-rare (130 to 135°F), and sear the fat edge for 30 seconds."
+  - "Rest the steak 5 minutes and drizzle with the finishing oil. Slice against the grain and serve over the potatoes."
+  - text: "Finish with a pinch of red pepper flakes."
+    only_if: { heat: red-pepper-flakes }
+
+notes:
+  - "Swap in Italian seasoning on the potatoes for a herby version, or toss them with a little Frank's RedHot after crisping."
+  - "If your steak is thinner than 1\", cut the sear time to 2 to 3 minutes per side."
+  - "A 1 lb strip serves two when sliced."

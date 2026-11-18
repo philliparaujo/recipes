@@ -1,0 +1,9 @@
+id: potato-russet
+display_name: "Russet Potato (about 1 lb)"
+category: vegetable
+package: { amount: 1, unit: lb, equals: { amount: 1, unit: unit } }
+owned: true
+cost_per_unit: { amount: 0.99, unit: "unit" }
+nutrition: { unit: "unit", calories: 360, protein_g: 9.5, fat_g: 0.4, carbs_g: 82 }
+estimated: [nutrition]
+count_label: { one: "potato", other: "potatoes" }

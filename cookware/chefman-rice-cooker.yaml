@@ -1,0 +1,6 @@
+id: chefman-rice-cooker
+category: appliance
+name: "Chefman Rice Cooker"
+short_name: "rice cooker"
+owned: true
+tags: [rice-cooker]

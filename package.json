@@ -1,0 +1,11 @@
+{
+  "name": "recipes",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  }
+}

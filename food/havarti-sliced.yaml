@@ -1,0 +1,8 @@
+id: havarti-sliced
+display_name: "Havarti Cheese (sliced)"
+category: dairy
+owned: true
+package: { amount: 8, unit: oz }
+cost_per_unit: { amount: 0.75, unit: "oz" }
+nutrition: { unit: "oz", calories: 120, protein_g: 7, fat_g: 10, carbs_g: 0 }
+estimated: [cost_per_unit, nutrition, package]

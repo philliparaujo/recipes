@@ -1,0 +1,8 @@
+id: spicy-mayo
+display_name: "Spicy Mayo"
+category: sauce
+made_from:
+  - { food: mayo, amount: 1, unit: tbsp }
+  - { food: hot-sauce, amount: 1, unit: tsp }
+  - { food: onion-powder, amount: 0.25, unit: tsp }
+makes: { amount: 1, unit: tbsp }

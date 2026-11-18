@@ -1,0 +1,9 @@
+id: alfredo-sauce
+display_name: "Alfredo Sauce"
+brand: "Trader Joe's"
+category: sauce
+package: { amount: 15, unit: "oz" }
+owned: true
+cost_per_unit: { amount: 0.233, unit: "oz" }
+nutrition: { unit: "oz", calories: 77, protein_g: 1, fat_g: 7, carbs_g: 2 }
+estimated: [cost_per_unit, nutrition, package]

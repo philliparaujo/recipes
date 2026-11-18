@@ -1,0 +1,8 @@
+id: salt
+display_name: "Salt"
+category: spice
+owned: true
+package: { amount: 26, unit: oz, equals: { amount: 130, unit: tsp } }
+cost_per_unit: { amount: 0.02, unit: "tsp" }
+nutrition: { unit: "tsp", calories: 0, protein_g: 0, fat_g: 0, carbs_g: 0 }
+estimated: [nutrition, package]

@@ -1,0 +1,9 @@
+id: chicken-tenders-raw
+display_name: "Chicken Tenders (raw)"
+brand: "Trader Joe's"
+category: protein
+package: { amount: 1.5, unit: "lb" }
+owned: true
+cost_per_unit: { amount: 5.15, unit: "lb" }
+nutrition: { unit: "oz", calories: 32, protein_g: 6.2, fat_g: 0.4, carbs_g: 0 }
+estimated: [cost_per_unit, nutrition, package]

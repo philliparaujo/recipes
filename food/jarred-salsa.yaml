@@ -1,0 +1,9 @@
+id: jarred-salsa
+display_name: "Salsa"
+brand: "Herdez"
+category: sauce
+package: { amount: 2, unit: "cup" }
+owned: true
+cost_per_unit: { amount: 0.11, unit: "tbsp" }
+nutrition: { unit: "tbsp", calories: 4, protein_g: 0.2, fat_g: 0, carbs_g: 1 }
+estimated: [cost_per_unit, nutrition, package]

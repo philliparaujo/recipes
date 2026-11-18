@@ -1,0 +1,7 @@
+id: chicken-strips-precooked-frozen
+display_name: "Chicken Breast Strips (pre-cooked, frozen)"
+category: protein
+owned: true
+cost_per_unit: { amount: 7, unit: "lb" }
+nutrition: { unit: "oz", calories: 50, protein_g: 7, fat_g: 1.5, carbs_g: 1 }
+estimated: [cost_per_unit, nutrition]

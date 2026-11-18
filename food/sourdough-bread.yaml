@@ -1,0 +1,10 @@
+id: sourdough-bread
+display_name: "Crushed Wheat Sourdough"
+brand: "Trader Joe's"
+category: grain
+package: { amount: 16, unit: "unit" }
+owned: true
+cost_per_unit: { amount: 0.23, unit: "unit" }
+nutrition: { unit: "unit", calories: 145, protein_g: 6, fat_g: 1, carbs_g: 28 }
+estimated: [cost_per_unit, nutrition, package]
+count_label: { one: "slice", other: "slices" }

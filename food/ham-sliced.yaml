@@ -1,0 +1,9 @@
+id: ham-sliced
+display_name: "Ham (sliced)"
+brand: "Kirkland"
+category: protein
+owned: true
+cost_per_unit: { amount: 0.28, unit: "unit" }
+nutrition: { unit: "unit", calories: 25, protein_g: 3.5, fat_g: 1, carbs_g: 0.5 }
+estimated: [cost_per_unit, nutrition]
+count_label: { one: "slice", other: "slices" }

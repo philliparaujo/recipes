@@ -1,0 +1,8 @@
+id: parmesan-grated
+display_name: "Parmesan, grated"
+category: dairy
+package: { amount: 8, unit: oz, equals: { amount: 2, unit: cup } }
+owned: true
+cost_per_unit: { amount: 1, unit: "cup" }
+nutrition: { unit: "cup", calories: 430, protein_g: 38, fat_g: 28, carbs_g: 4 }
+estimated: [nutrition, package]

@@ -1,0 +1,8 @@
+id: chicken-breast-frozen
+display_name: "Chicken Breast (frozen)"
+category: protein
+package: { amount: 1, unit: "lb" }
+owned: true
+cost_per_unit: { amount: 3.5, unit: "lb" }
+nutrition: { unit: "oz", calories: 34, protein_g: 6.4, fat_g: 0.4, carbs_g: 0 }
+estimated: [nutrition]

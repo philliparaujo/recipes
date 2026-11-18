@@ -1,0 +1,71 @@
+id: garlic-chicken-pesto-rice-with-broccoli
+title: "Garlic Chicken & Pesto Rice with Broccoli"
+summary: "Seasoned seared chicken pieces and garlic broccoli over rice cooker jasmine rice stirred with basil pesto."
+servings: 4
+total_minutes: 40   # rice cooker 30 + 10 rest; chicken and broccoli run during that
+
+ingredients:
+  - id: rice
+    label: Rice
+    food: jasmine-rice
+    amount: 2
+    unit: cup
+    prep_minutes: 2   # rinsing
+    cook_minutes: 30
+    cookware: [chefman-rice-cooker]
+    seasonings:
+      - { food: salt, amount: 1, unit: tsp }
+      - { food: garlic-powder, amount: 0.67, unit: tsp }
+      - { food: pesto, amount: 4, unit: tbsp }   # stirred in after cooking
+
+  - id: protein
+    label: Protein
+    food: chicken-tenders-raw
+    amount: 32
+    unit: oz
+    prep_minutes: 15   # pat dry, cut, season, rest 10 minutes
+    cook_minutes: 8
+    cookware: [frypan-10-5in, nylon-tools-4pc]
+    seasonings:
+      - { food: canola-oil, amount: 2, unit: tbsp }
+      - { food: salt, amount: 1.67, unit: tsp }
+      - { food: garlic-powder, amount: 2, unit: tsp }
+      - { food: paprika, amount: 2, unit: tsp }
+      - { food: onion-powder, amount: 1, unit: tsp }
+      - { food: black-pepper, amount: 1, unit: tsp }
+
+  - id: vegetable
+    label: Vegetable
+    food: broccoli-fresh
+    amount: 20
+    unit: oz
+    cook_minutes: 5
+    cookware: [frypan-10-5in, nylon-tools-4pc]
+    seasonings:
+      - { food: canola-oil, amount: 2, unit: tbsp }
+      - { food: garlic-powder, amount: 1, unit: tsp }
+      - { food: salt, amount: 0.67, unit: tsp }
+      - { food: black-pepper, amount: 0.67, unit: tsp }
+
+  - id: broccoli-heat
+    label: Broccoli heat
+    optional: true
+    amount: 0.67
+    unit: tsp
+    options:
+      - food: red-pepper-flakes
+
+method:
+  - "Rinse the rice until the water runs mostly clear. Cook it in the rice cooker on the white rice setting with 2.6 cups water, the salt and the garlic powder, stirred once. When it switches to warm, rest 10 minutes."
+  - "While the rice cooks, pat the chicken dry, cut it into 1-inch pieces, and toss with the oil, salt, garlic powder, paprika, onion powder and black pepper. Let it sit about 10 minutes while the pan heats."
+  - "Sear the chicken in a large skillet over medium-high in a single layer (two batches if crowded), 3 to 4 minutes per side, until golden and the largest piece reaches 165°F. Move to a plate."
+  - "In the same pan over medium-high, cook the broccoli with the oil, garlic powder, salt and black pepper."
+  - text: "Add the red pepper flakes to the broccoli seasoning."
+    only_if: { broccoli-heat: red-pepper-flakes }
+  - "Add 4 tablespoons water to the broccoli, cover, and steam 3 minutes. Uncover and cook 2 more minutes until tender-crisp."
+  - "Fluff the rice and stir in the pesto until evenly coated. Return the chicken to the pan with the broccoli and toss for 30 seconds, then spoon over the pesto rice."
+
+notes:
+  - "For extra flavor at the table: a few dashes of Frank's RedHot on the chicken, or Herdez salsa over the rice."
+  - "If the broccoli needs more punch, add a pinch of Italian seasoning while it cooks."
+  - "Leftovers keep 3 to 4 days in the fridge."

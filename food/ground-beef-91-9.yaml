@@ -1,0 +1,9 @@
+id: ground-beef-91-9
+display_name: "Ground Beef (91/9)"
+brand: "Kirkland"
+category: protein
+package: { amount: 1, unit: "lb" }
+owned: true
+cost_per_unit: { amount: 5.75, unit: "lb" }
+nutrition: { unit: "oz", calories: 43, protein_g: 5.8, fat_g: 2.5, carbs_g: 0 }
+estimated: [cost_per_unit, nutrition]

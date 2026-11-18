@@ -1,0 +1,9 @@
+id: smoky-mayo
+display_name: "Smoky Mayo"
+category: sauce
+made_from:
+  - { food: mayo, amount: 1, unit: tbsp }
+  - { food: paprika, amount: 0.25, unit: tsp }
+  - { food: onion-powder, amount: 1, unit: pinch }
+  - { food: black-pepper, amount: 1, unit: pinch }
+makes: { amount: 1, unit: tbsp }

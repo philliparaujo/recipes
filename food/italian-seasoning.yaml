@@ -1,0 +1,8 @@
+id: italian-seasoning
+display_name: "Italian Seasoning"
+category: spice
+package: { amount: 0.7, unit: oz, equals: { amount: 15, unit: tsp } }
+owned: true
+cost_per_unit: { amount: 0.28, unit: "tsp" }
+nutrition: { unit: "tsp", calories: 3, protein_g: 0.1, fat_g: 0.1, carbs_g: 0.6 }
+estimated: [nutrition, package]

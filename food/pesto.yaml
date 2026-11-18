@@ -1,0 +1,9 @@
+id: pesto
+display_name: "Basil Pesto"
+brand: "Store brand"
+category: sauce
+package: { amount: 6.7, unit: oz, equals: { amount: 12, unit: tbsp } }
+owned: true
+cost_per_unit: { amount: 0.52, unit: "tbsp" }
+nutrition: { unit: "tbsp", calories: 80, protein_g: 1.5, fat_g: 8, carbs_g: 1 }
+estimated: [cost_per_unit, nutrition, package]

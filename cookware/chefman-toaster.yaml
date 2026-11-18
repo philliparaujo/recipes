@@ -1,0 +1,6 @@
+id: chefman-toaster
+category: appliance
+name: "Chefman Toaster"
+short_name: "toaster"
+owned: true
+tags: [toaster]

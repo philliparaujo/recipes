@@ -1,0 +1,9 @@
+id: penne
+display_name: "Penne Rigate (dry)"
+brand: "Trader Joe's"
+category: pasta
+package: { amount: 1, unit: "lb" }
+owned: true
+cost_per_unit: { amount: 0.081, unit: "oz" }
+nutrition: { unit: "oz", calories: 105, protein_g: 3.7, fat_g: 0.5, carbs_g: 21 }
+estimated: [nutrition]

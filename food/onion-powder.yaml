@@ -1,0 +1,9 @@
+id: onion-powder
+display_name: "Onion Powder"
+brand: "McCormick"
+category: spice
+package: { amount: 2.62, unit: oz, equals: { amount: 31, unit: tsp } }
+owned: true
+cost_per_unit: { amount: 0.19, unit: "tsp" }
+nutrition: { unit: "tsp", calories: 7, protein_g: 0.2, fat_g: 0, carbs_g: 1.7 }
+estimated: [cost_per_unit, nutrition, package]

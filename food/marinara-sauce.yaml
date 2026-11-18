@@ -1,0 +1,9 @@
+id: marinara-sauce
+display_name: "Marinara Sauce (organic)"
+brand: "Trader Joe's"
+category: sauce
+package: { amount: 25, unit: "oz" }
+owned: true
+cost_per_unit: { amount: 0.14, unit: "oz" }
+nutrition: { unit: "oz", calories: 17, protein_g: 0.7, fat_g: 0.6, carbs_g: 2.3 }
+estimated: [cost_per_unit, nutrition, package]

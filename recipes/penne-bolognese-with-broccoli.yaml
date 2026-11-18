@@ -1,0 +1,70 @@
+id: penne-bolognese-with-broccoli
+title: "Penne Bolognese with Broccoli (Meal Prep)"
+summary: "Dinner tonight plus 3 lunches. Seasoned beef and a reduced, thicker sauce."
+servings: 4
+
+cookware: [dutch-oven-5qt-covered]
+
+ingredients:
+  - id: protein
+    label: Protein
+    food: ground-beef-91-9
+    amount: 1
+    unit: lb
+    prep_minutes: 2
+    cook_minutes: 10
+    cookware: [frypan-10-5in, nylon-tools-4pc]
+    seasonings:
+      - { food: canola-oil, amount: 1, unit: tbsp }
+      - { food: salt, amount: 0.5, unit: tsp }
+      - { food: onion-powder, amount: 1, unit: tsp }
+      - { food: garlic-powder, amount: 1, unit: tsp }
+      - { food: paprika, amount: 1, unit: tsp }
+      - { food: black-pepper, amount: 0.5, unit: tsp }
+      - { food: red-pepper-flakes, amount: 0.33, unit: tsp }
+
+  - id: sauce
+    label: Sauce
+    food: marinara-sauce
+    amount: 24
+    unit: oz
+    cook_minutes: 14   # reduced uncovered until it coats a spoon
+    cookware: [category:pan, nylon-tools-4pc]
+    seasonings:
+      - { food: italian-seasoning, amount: 1.5, unit: tsp }
+
+  - id: pasta
+    label: Pasta
+    food: penne
+    amount: 12
+    unit: oz
+    prep_minutes: 10   # bringing the water to a boil
+    cook_minutes: 9
+    cookware: [category:pot, nylon-tools-4pc]
+    seasonings:
+      - { food: salt, amount: 1, unit: tbsp }
+
+  - id: vegetable
+    label: Vegetable
+    food: broccoli-fresh
+    amount: 12
+    unit: oz
+    cook_minutes: 3
+    cookware: [category:pot]
+
+  - id: cheese
+    label: Cheese
+    food: parmesan-grated
+    amount: 0.5
+    unit: cup
+
+method:
+  - "Fill the Dutch oven with about 2.5 quarts of water (lighter to drain), add the salt, cover, and bring to a boil."
+  - "Warm the oil in the frypan over medium-high. Add the beef with the salt, onion powder, garlic powder, paprika, black pepper and red pepper flakes. Break it up and cook until browned with no pink. At 91/9 there is little fat, so only drain if it looks greasy."
+  - "Stir the Italian seasoning into the beef for 30 seconds, then pour in the marinara. Simmer uncovered over medium-low for 12 to 15 minutes, stirring often, until it coats the back of a spoon."
+  - "Meanwhile, cook the penne 1 minute less than the package says, adding the broccoli for the last 2 to 3 minutes. Scoop both out with the slotted spoon, letting each scoop drip over the pot, then drain thoroughly."
+  - "Fold the penne and broccoli into the sauce (in the frypan if it fits, otherwise in a large bowl), stir in the parmesan, and rest 5 minutes so the pasta absorbs the sauce."
+  - "Divide into 4 equal portions. Eat one now; cool the rest uncovered for 20 to 30 minutes, then cover and refrigerate."
+
+notes:
+  - "Frank's RedHot or extra red pepper flakes can be added at the table or at work for heat without changing the whole batch."

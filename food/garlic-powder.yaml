@@ -1,0 +1,8 @@
+id: garlic-powder
+display_name: "Garlic Powder"
+category: spice
+owned: true
+package: { amount: 3.1, unit: oz, equals: { amount: 28, unit: tsp } }
+cost_per_unit: { amount: 0.1, unit: "tsp" }
+nutrition: { unit: "tsp", calories: 10, protein_g: 0.5, fat_g: 0, carbs_g: 2 }
+estimated: [nutrition, package]

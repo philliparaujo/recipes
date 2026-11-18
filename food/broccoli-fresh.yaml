@@ -1,0 +1,8 @@
+id: broccoli-fresh
+display_name: "Broccoli Florets (fresh, refrigerated)"
+category: vegetable
+package: { amount: 12, unit: "oz" }
+owned: true
+cost_per_unit: { amount: 0.249, unit: "oz" }
+nutrition: { unit: "oz", calories: 9.6, protein_g: 0.8, fat_g: 0.1, carbs_g: 1.9 }
+estimated: [nutrition]

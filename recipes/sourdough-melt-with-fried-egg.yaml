@@ -1,0 +1,68 @@
+id: sourdough-melt-with-fried-egg
+title: "Sourdough Melt with Fried Egg"
+summary: "A crispy toasted melt with creamy Havarti, roast beef, spicy mayo, and runny seasoned eggs. No lid needed."
+servings: 1
+
+ingredients:
+  - id: bread
+    label: Bread
+    amount: 2
+    unit: unit
+    options:
+      - food: sourdough-bread
+      - food: white-bread
+    prep_minutes: 3
+    cook_minutes: 8
+    cookware: [frypan-8in, nylon-tools-4pc]
+    seasonings:
+      - { food: butter, amount: 1, unit: tbsp }          # outsides, for browning
+
+  - id: spread
+    label: Spread
+    amount: 1
+    unit: tbsp
+    options:
+      - food: spicy-mayo
+      - food: smoky-mayo
+
+  - id: cheese
+    label: Cheese
+    food: havarti-sliced
+    amount: 2
+    unit: oz
+
+  - id: meat
+    label: Meat
+    amount: 3
+    unit: oz
+    options:
+      - food: roast-beef-sliced
+      - food: ham-sliced
+        amount: 4   # slices, about 3 oz
+        unit: unit
+    seasonings:
+      - { food: black-pepper, amount: 0.125, unit: tsp }
+
+  - id: egg
+    label: Egg
+    food: egg
+    amount: 2
+    unit: unit
+    cook_minutes: 3
+    seasonings:
+      - { food: butter, amount: 1, unit: tsp }
+      - { food: salt, amount: 1, unit: pinch }
+      - { food: black-pepper, amount: 1, unit: pinch }
+      - { food: paprika, amount: 1, unit: pinch }
+      - { food: red-pepper-flakes, amount: 1, unit: pinch }
+
+method:
+  - "Mix up the {{food:spread}} (the Notes list what goes in it)."
+  - "Butter the flat cut side of each {{food:bread}} slice; these become the outsides. Spread the inside of each slice with the {{food:spread}}."
+  - "Butter-side down, layer half the cheese, the {{food:meat}} with a little black pepper, then the rest of the cheese, and top with the second slice butter-side up."
+  - "Toast in a pan over medium-low until golden, pressing gently. Flip, lower the heat, and cook until the second side is golden and the cheese is melted. Move to a plate."
+  - "In the same pan over medium heat, melt the butter for the eggs, crack in the eggs, season with the salt, pepper, paprika and red pepper flakes, and cook until the whites are set but the yolks are runny."
+  - "Slide the eggs onto the {{food:meat}} and cheese, close the sandwich, cut in half and eat hot."
+
+notes:
+  - "No lid? An upside-down plate or a sheet of foil over the pan traps heat for faster melting. Otherwise, low heat and a little patience does the job."

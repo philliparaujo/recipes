@@ -1,0 +1,8 @@
+id: black-pepper
+display_name: "Black Pepper"
+category: spice
+package: { amount: 2.5, unit: oz, equals: { amount: 31, unit: tsp } }
+owned: true
+cost_per_unit: { amount: 0.26, unit: "tsp" }
+nutrition: { unit: "tsp", calories: 6, protein_g: 0.2, fat_g: 0.1, carbs_g: 1.5 }
+estimated: [cost_per_unit, nutrition, package]
