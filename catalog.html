@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#161616" media="(prefers-color-scheme: dark)">
+<meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Recipes">
+<link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="icon.svg">
+<title>Catalog</title><link rel="stylesheet" href="style.css"></head>
+<body class="wide">
+<nav><a href="index.html">Recipes</a><a href="catalog.html">Catalog</a></nav>
+<div id="ovbanner" class="banner" hidden></div>
+<h1>Catalog</h1>
+<p class="meta">Tick "owned" to try a what-if on this device (kept in this browser only, never written to your YAML). To make a change permanent, edit the YAML file or use the generator at the bottom. Click a column heading to sort. A ~ marks an estimate.</p>
+<h2>Recipes</h2>
+<div class="scroll"><table id="t-recipes" data-sortable><thead><tr><th scope="col" data-type="text" tabindex="0" role="button" aria-label="Sort by Recipe">Recipe</th><th scope="col" data-type="num" tabindex="0" role="button" aria-label="Sort by Cost/serving">Cost/serving</th><th scope="col" data-type="num" tabindex="0" role="button" aria-label="Sort by kcal/serving">kcal/serving</th><th scope="col" data-type="num" tabindex="0" role="button" aria-label="Sort by Protein/serving">Protein/serving</th><th scope="col" data-type="num" tabindex="0" role="button" aria-label="Sort by Time">Time</th><th scope="col" data-type="text" tabindex="0" role="button" aria-label="Sort by Status">Status</th></tr></thead><tbody><tr><td data-v="Chicken Penne Alfredo (Meal Prep)"><a href="recipe-chicken-penne-alfredo.html">Chicken Penne Alfredo (Meal Prep)</a></td><td data-v="3.8550000405768405">$3.86</td><td data-v="871.05">871</td><td data-v="52.86249999999999">53 g</td><td data-v="30">30 min</td><td class="status-cell" data-status="chicken-penne-alfredo"><span class="badge ok">✓ Makeable now</span></td></tr><tr><td data-v="Garlic Chicken &amp; Pesto Rice with Broccoli"><a href="recipe-garlic-chicken-pesto-rice-with-broccoli.html">Garlic Chicken &amp; Pesto Rice with Broccoli</a></td><td data-v="5.269500000000001">$5.27</td><td data-v="861.93">862</td><td data-v="62.34225">62 g</td><td data-v="40">40 min</td><td class="status-cell" data-status="garlic-chicken-pesto-rice-with-broccoli"><span class="badge ok">✓ Makeable now</span></td></tr><tr><td data-v="Pan-Seared NY Strip with Crispy Paprika Potatoes"><a href="recipe-pan-seared-ny-strip-with-crispy-paprika-potatoes.html">Pan-Seared NY Strip with Crispy Paprika Potatoes</a></td><td data-v="7.662500013525797">$7.66</td><td data-v="855.416610760949">855</td><td data-v="50.9">51 g</td><td data-v="36">36 min</td><td class="status-cell" data-status="pan-seared-ny-strip-with-crispy-paprika-potatoes"><span class="badge ok">✓ Makeable now</span></td></tr><tr><td data-v="Penne Bolognese with Broccoli (Meal Prep)"><a href="recipe-penne-bolognese-with-broccoli.html">Penne Bolognese with Broccoli (Meal Prep)</a></td><td data-v="3.7306750405768403">$3.73</td><td data-v="710.67">711</td><td data-v="45.987249999999996">46 g</td><td data-v="26">26 min</td><td class="status-cell" data-status="penne-bolognese-with-broccoli"><span class="badge ok">✓ Makeable now</span></td></tr><tr><td data-v="Pesto Chicken Penne with Broccoli (Meal Prep)"><a href="recipe-pesto-chicken-penne-with-broccoli.html">Pesto Chicken Penne with Broccoli (Meal Prep)</a></td><td data-v="4.063746523926856">$4.06</td><td data-v="760.5744589769254">761</td><td data-v="53.72748985581734">54 g</td><td data-v="30">30 min</td><td class="status-cell" data-status="pesto-chicken-penne-with-broccoli"><span class="badge ok">✓ Makeable now</span></td></tr><tr><td data-v="Seasoned Soft Scrambled Eggs"><a href="recipe-seasoned-soft-scrambled-eggs.html">Seasoned Soft Scrambled Eggs</a></td><td data-v="1.9547">$1.95</td><td data-v="397.26000000000005">397</td><td data-v="25.63">26 g</td><td data-v="6">6 min</td><td class="status-cell" data-status="seasoned-soft-scrambled-eggs"><span class="badge ok">✓ Makeable now</span></td></tr><tr><td data-v="Sourdough Melt with Fried Egg"><a href="recipe-sourdough-melt-with-fried-egg.html">Sourdough Melt with Fried Egg</a></td><td data-v="4.593749935753702">$4.59</td><td data-v="983.6749098520352">984</td><td data-v="59.908333324316494">60 g</td><td data-v="11">11 min</td><td class="status-cell" data-status="sourdough-melt-with-fried-egg"><span class="badge ok">✓ Makeable now</span></td></tr></tbody></table></div>
+<h2>Food</h2><div class="controls"><input type="search" class="tfilter" data-table="t-food" placeholder="Search" aria-label="Search t-food"><select class="catfilter" data-table="t-food" aria-label="Category"><option value="">All categories</option><option>protein</option><option>dairy</option><option>vegetable</option><option>fruit</option><option>grain</option><option>pasta</option><option>sauce</option><option>fat</option><option>spice</option><option>pantry</option><option>other</option></select></div>
+<div class="scroll"><table id="t-food" data-sortable><thead><tr><th scope="col" data-type="text" tabindex="0" role="button" aria-label="Sort by Food">Food</th><th scope="col" data-type="text" tabindex="0" role="button" aria-label="Sort by Category">Category</th><th scope="col" data-type="num" tabindex="0" role="button" aria-label="Sort by Owned">Owned</th><th scope="col" data-type="text" tabindex="0" role="button" aria-label="Sort by Package">Package</th><th scope="col" data-type="num" tabindex="0" role="button" aria-label="Sort by Price">Price</th><th scope="col" data-type="text" tabindex="0" role="button" aria-label="Sort by Nutrition">Nutrition</th><th scope="col" data-type="num" tabindex="0" role="button" aria-label="Sort by Used in">Used in</th></tr></thead><tbody><tr data-cat="sauce" data-search="alfredo sauce trader joe's sauce">
+<td data-v="Alfredo Sauce"><strong>Alfredo Sauce</strong> <span class="brand">Trader Joe's</span></td>
+<td data-v="sauce">sauce</td>
+<td data-v="1"><label class="owned-toggle-label"><input type="checkbox" class="owned-toggle" data-id="alfredo-sauce" checked> <span class="owned-text">owned</span></label></td>
+<td>~15 oz</td>
+<td data-v="0.233">~$0.233/oz</td>
+<td>~77 kcal · 1 g protein · 7 g fat · 2 g carbs per oz</td>
+<td data-v="2" title="Chicken Penne Alfredo (Meal Prep), Pesto Chicken Penne with Broccoli (Meal Prep)">2</td></tr><tr data-cat="fruit" data-search="banana  fruit">
+<td data-v="Banana"><strong>Banana</strong></td>
+<td data-v="fruit">fruit</td>
+<td data-v="1"><label class="owned-toggle-label"><input type="checkbox" class="owned-toggle" data-id="banana" checked> <span class="owned-text">owned</span></label></td>
+<td>—</td>
+<td data-v="0.23">~$0.23/banana</td>
+<td>~105 kcal · 1.3 g protein · 0.4 g fat · 27 g carbs per banana</td>
+<td data-v="0" title=""><span class="badge no">unused</span></td></tr><tr data-cat="sauce" data-search="basil pesto store brand sauce">
+<td data-v="Basil Pesto"><strong>Basil Pesto</strong> <span class="brand">Store brand</span></td>
+<td data-v="sauce">sauce</td>
+<td data-v="1"><label class="owned-toggle-label"><input type="checkbox" class="owned-toggle" data-id="pesto" checked> <span class="owned-text">owned</span></label></td>
+<td>~6.7 oz (≈ 12 tbsp)</td>
+<td data-v="0.52">~$0.52/tbsp</td>
+<td>~80 kcal · 1.5 g protein · 8 g fat · 1 g carbs per tbsp</td>
+<td data-v="2" title="Garlic Chicken &amp; Pesto Rice with Broccoli, Pesto Chicken Penne with Broccoli (Meal Prep)">2</td></tr><tr data-cat="protein" data-search="beef steak (premium choice angus) trader joe's protein">
+<td data-v="Beef Steak (Premium Choice Angus)"><strong>Beef Steak (Premium Choice Angus)</strong> <span class="brand">Trader Joe's</span></td>
+<td data-v="protein">protein</td>
+<td data-v="1"><label class="owned-toggle-label"><input type="checkbox" class="owned-toggle" data-id="beef-steak-choice-angus" checked> <span class="owned-text">owned</span></label></td>
+<td>~1.5 lb</td>
+<td data-v="13.06">~$13.06/lb</td>
+<td>~57 kcal · 5.7 g protein · 3.6 g fat · 0 g carbs per oz</td>
+<td data-v="1" title="Pan-Seared NY Strip with Crispy Paprika Potatoes">1</td></tr><tr data-cat="spice" data-search="black pepper  spice">
+<td data-v="Black Pepper"><strong>Black Pepper</strong></td>
+<td data-v="spice">spice</td>
+<td data-v="1"><label class="owned-toggle-label"><input type="checkbox" class="owned-toggle" data-id="black-pepper" checked> <span class="owned-text">owned</span></label></td>
+<td>~2.5 oz (≈ 31 tsp)</td>
+<td data-v="0.26">~$0.26/tsp</td>
+<td>~6 kcal · 0.2 g protein · 0.1 g fat · 1.5 g carbs per tsp</td>
+<td data-v="7" title="Chicken Penne Alfredo (Meal Prep), Garlic Chicken &amp; Pesto Rice with Broccoli, Pan-Seared NY Strip with Crispy Paprika Potatoes, Penne Bolognese with Broccoli (Meal Prep), Pesto Chicken Penne with Broccoli (Meal Prep), Seasoned Soft Scrambled Eggs, Sourdough Melt with Fried Egg">7</td></tr><tr data-cat="vegetable" data-search="broccoli florets (fresh, refrigerated)  vegetable">
+<td data-v="Broccoli Florets (fresh, refrigerated)"><strong>Broccoli Florets (fresh, refrigerated)</strong></td>
+<td data-v="vegetable">vegetable</td>
+<td data-v="1"><label class="owned-toggle-label"><input type="checkbox" class="owned-toggle" data-id="broccoli-fresh" checked> <span class="owned-text">owned</span></label></td>
+<td>12 oz</td>
+<td data-v="0.249">$0.249/oz</td>
+<td>~9.6 kcal · 0.8 g protein · 0.1 g fat · 1.9 g carbs per oz</td>
+<td data-v="4" title="Chicken Penne Alfredo (Meal Prep), Garlic Chicken &amp; Pesto Rice with Broccoli, Penne Bolognese with Broccoli (Meal Prep), Pesto Chicken Penne with Broccoli (Meal Prep)">4</td></tr><tr data-cat="dairy" data-search="butter  dairy">
+<td data-v="Butter"><strong>Butter</strong></td>
+<td data-v="dairy">dairy</td>
+<td data-v="1"><label class="owned-toggle-label"><input type="checkbox" class="owned-toggle" data-id="butter" checked> <span class="owned-text">owned</span></label></td>
+<td>~1 lb (≈ 32 tbsp)</td>
+<td data-v="0.15">~$0.15/tbsp</td>
+<td>~102 kcal · 0.1 g protein · 11.5 g fat · 0 g carbs per tbsp</td>
+<td data-v="2" title="Seasoned Soft Scrambled Eggs, Sourdough Melt with Fried Egg">2</td></tr><tr data-cat="fat" data-search="canola oil (or olive oil)  fat">
+<td data-v="Canola Oil (or olive oil)"><strong>Canola Oil (or olive oil)</strong></td>
+<td data-v="fat">fat</td>
+<td data-v="1"><label class="owned-toggle-label"><input type="checkbox" class="owned-toggle" data-id="canola-oil" checked> <span class="owned-text">owned</span></label></td>
+<td>~2 cup</td>
+<td data-v="0.15">$0.15/tbsp</td>
+<td>~124 kcal · 0 g protein · 14 g fat · 0 g carbs per tbsp</td>
+<td data-v="6" title="Chicken Penne Alfredo (Meal Prep), Garlic Chicken &amp; Pesto Rice with Broccoli, Pan-Seared NY Strip with Crispy Paprika Potatoes, Penne Bolognese with Broccoli (Meal Prep), Pesto Chicken Penne with Broccoli (Meal Prep), Seasoned Soft Scrambled Eggs">6</td></tr><tr data-cat="protein" data-search="chicken breast (frozen)  protein">
+<td data-v="Chicken Breast (frozen)"><strong>Chicken Breast (frozen)</strong></td>
+<td data-v="protein">protein</td>
+<td data-v="1"><label class="owned-toggle-label"><input type="checkbox" class="owned-toggle" data-id="chicken-breast-frozen" checked> <span class="owned-text">owned</span></label></td>
+<td>1 lb</td>
+<td data-v="3.5">$3.50/lb</td>
+<td>~34 kcal · 6.4 g protein · 0.4 g fat · 0 g carbs per oz</td>
+<td data-v="0" title=""><span class="badge no">unused</span></td></tr><tr data-cat="protein" data-search="chicken breast strips (pre-cooked, frozen)  protein">
+<td data-v="Chicken Breast Strips (pre-cooked, frozen)"><strong>Chicken Breast Strips (pre-cooked, frozen)</strong></td>
+<td data-v="protein">protein</td>
+<td data-v="1"><label class="owned-toggle-label"><input type="checkbox" class="owned-toggle" data-id="chicken-strips-precooked-frozen" checked> <span class="owned-text">owned</span></label></td>
+<td>—</td>
+<td data-v="7">~$7.00/lb</td>
+<td>~50 kcal · 7 g protein · 1.5 g fat · 1 g carbs per oz</td>
+<td data-v="0" title=""><span class="badge no">unused</span></td></tr><tr data-cat="protein" data-search="chicken tenders (raw) trader joe's protein">
+<td data-v="Chicken Tenders (raw)"><strong>Chicken Tenders (raw)</strong> <span class="brand">Trader Joe's</span></td>
+<td data-v="protein">protein</td>
+<td data-v="1"><label class="owned-toggle-label"><input type="checkbox" class="owned-toggle" data-id="chicken-tenders-raw" checked> <span class="owned-text">owned</span></label></td>
+<td>~1.5 lb</td>
+<td data-v="5.15">~$5.15/lb</td>
+<td>~32 kcal · 6.2 g protein · 0.4 g fat · 0 g carbs per oz</td>
+<td data-v="3" title="Chicken Penne Alfredo (Meal Prep), Garlic Chicken &amp; Pesto Rice with Broccoli, Pesto Chicken Penne with Broccoli (Meal Prep)">3</td></tr><tr data-cat="grain" data-search="crushed wheat sourdough trader joe's grain">
+<td data-v="Crushed Wheat Sourdough"><strong>Crushed Wheat Sourdough</strong> <span class="brand">Trader Joe's</span></td>
+<td data-v="grain">grain</td>
+<td data-v="1"><label class="owned-toggle-label"><input type="checkbox" class="owned-toggle" data-id="sourdough-bread" checked> <span class="owned-text">owned</span></label></td>
+<td>~16 slices</td>
+<td data-v="0.23">~$0.23/slice</td>
+<td>~145 kcal · 6 g protein · 1 g fat · 28 g carbs per slice</td>
+<td data-v="1" title="Sourdough Melt with Fried Egg">1</td></tr><tr data-cat="protein" data-search="egg (large)  protein">
+<td data-v="Egg (large)"><strong>Egg (large)</strong></td>
+<td data-v="protein">protein</td>
+<td data-v="1"><label class="owned-toggle-label"><input type="checkbox" class="owned-toggle" data-id="egg" checked> <span class="owned-text">owned</span></label></td>
+<td>~12 eggs</td>
+<td data-v="0.4">~$0.40/egg</td>
+<td>~72 kcal · 6.3 g protein · 4.8 g fat · 0.4 g carbs per egg</td>
+<td data-v="2" title="Seasoned Soft Scrambled Eggs, Sourdough Melt with Fried Egg">2</td></tr><tr data-cat="spice" data-search="garlic powder  spice">
+<td data-v="Garlic Powder"><strong>Garlic Powder</strong></td>
+<td data-v="spice">spice</td>
+<td data-v="1"><label class="owned-toggle-label"><input type="checkbox" class="owned-toggle" data-id="garlic-powder" checked> <span class="owned-text">owned</span></label></td>
+<td>~3.1 oz (≈ 28 tsp)</td>
+<td data-v="0.1">$0.10/tsp</td>
+<td>~10 kcal · 0.5 g protein · 0 g fat · 2 g carbs per tsp</td>
+<td data-v="6" title="Chicken Penne Alfredo (Meal Prep), Garlic Chicken &amp; Pesto Rice with Broccoli, Pan-Seared NY Strip with Crispy Paprika Potatoes, Penne Bolognese with Broccoli (Meal Prep), Pesto Chicken Penne with Broccoli (Meal Prep), Seasoned Soft Scrambled Eggs">6</td></tr><tr data-cat="protein" data-search="ground beef (91/9) kirkland protein">
+<td data-v="Ground Beef (91/9)"><strong>Ground Beef (91/9)</strong> <span class="brand">Kirkland</span></td>
+<td data-v="protein">protein</td>
+<td data-v="1"><label class="owned-toggle-label"><input type="checkbox" class="owned-toggle" data-id="ground-beef-91-9" checked> <span class="owned-text">owned</span></label></td>
+<td>1 lb</td>
+<td data-v="5.75">~$5.75/lb</td>
+<td>~43 kcal · 5.8 g protein · 2.5 g fat · 0 g carbs per oz</td>
+<td data-v="1" title="Penne Bolognese with Broccoli (Meal Prep)">1</td></tr><tr data-cat="protein" data-search="ham (sliced) kirkland protein">
+<td data-v="Ham (sliced)"><strong>Ham (sliced)</strong> <span class="brand">Kirkland</span></td>
+<td data-v="protein">protein</td>
+<td data-v="1"><label class="owned-toggle-label"><input type="checkbox" class="owned-toggle" data-id="ham-sliced" checked> <span class="owned-text">owned</span></label></td>
+<td>—</td>
+<td data-v="0.28">~$0.28/slice</td>
+<td>~25 kcal · 3.5 g protein · 1 g fat · 0.5 g carbs per slice</td>
+<td data-v="2" title="Seasoned Soft Scrambled Eggs, Sourdough Melt with Fried Egg">2</td></tr><tr data-cat="dairy" data-search="havarti cheese (sliced)  dairy">
+<td data-v="Havarti Cheese (sliced)"><strong>Havarti Cheese (sliced)</strong></td>
+<td data-v="dairy">dairy</td>
+<td data-v="1"><label class="owned-toggle-label"><input type="checkbox" class="owned-toggle" data-id="havarti-sliced" checked> <span class="owned-text">owned</span></label></td>
+<td>~8 oz</td>
+<td data-v="0.75">~$0.75/oz</td>
+<td>~120 kcal · 7 g protein · 10 g fat · 0 g carbs per oz</td>
+<td data-v="1" title="Sourdough Melt with Fried Egg">1</td></tr><tr data-cat="sauce" data-search="hot sauce frank's redhot sauce">
+<td data-v="Hot Sauce"><strong>Hot Sauce</strong> <span class="brand">Frank's RedHot</span></td>
+<td data-v="sauce">sauce</td>
+<td data-v="1"><label class="owned-toggle-label"><input type="checkbox" class="owned-toggle" data-id="hot-sauce" checked> <span class="owned-text">owned</span></label></td>
+<td>~1½ cup</td>
+<td data-v="0.04">~$0.04/tsp</td>
+<td>~0 kcal · 0 g protein · 0 g fat · 0 g carbs per tsp</td>
+<td data-v="1" title="Sourdough Melt with Fried Egg">1</td></tr><tr data-cat="spice" data-search="italian seasoning  spice">
+<td data-v="Italian Seasoning"><strong>Italian Seasoning</strong></td>
+<td data-v="spice">spice</td>
+<td data-v="1"><label class="owned-toggle-label"><input type="checkbox" class="owned-toggle" data-id="italian-seasoning" checked> <span class="owned-text">owned</span></label></td>
+<td>~0.7 oz (≈ 15 tsp)</td>
+<td data-v="0.28">$0.28/tsp</td>
+<td>~3 kcal · 0.1 g protein · 0.1 g fat · 0.6 g carbs per tsp</td>
+<td data-v="3" title="Chicken Penne Alfredo (Meal Prep), Penne Bolognese with Broccoli (Meal Prep), Pesto Chicken Penne with Broccoli (Meal Prep)">3</td></tr><tr data-cat="grain" data-search="jasmine rice (dry)  grain">
+<td data-v="Jasmine Rice (dry)"><strong>Jasmine Rice (dry)</strong></td>
+<td data-v="grain">grain</td>
+<td data-v="1"><label class="owned-toggle-label"><input type="checkbox" class="owned-toggle" data-id="jasmine-rice" checked> <span class="owned-text">owned</span></label></td>
+<td>~5 lb (≈ 12 cup)</td>
+<td data-v="0.8">~$0.80/cup</td>
+<td>~675 kcal · 13 g protein · 1 g fat · 148 g carbs per cup</td>
+<td data-v="1" title="Garlic Chicken &amp; Pesto Rice with Broccoli">1</td></tr><tr data-cat="sauce" data-search="ketchup heinz simply sauce">
+<td data-v="Ketchup"><strong>Ketchup</strong> <span class="brand">Heinz Simply</span></td>
+<td data-v="sauce">sauce</td>
+<td data-v="1"><label class="owned-toggle-label"><input type="checkbox" class="owned-toggle" data-id="ketchup" checked> <span class="owned-text">owned</span></label></td>
+<td>~2½ cup</td>
+<td data-v="0.125">~$0.125/tbsp</td>
+<td>~15 kcal · 0.2 g protein · 0 g fat · 4 g carbs per tbsp</td>
+<td data-v="0" title=""><span class="badge no">unused</span></td></tr><tr data-cat="sauce" data-search="marinara sauce (organic) trader joe's sauce">
+<td data-v="Marinara Sauce (organic)"><strong>Marinara Sauce (organic)</strong> <span class="brand">Trader Joe's</span></td>
+<td data-v="sauce">sauce</td>
+<td data-v="1"><label class="owned-toggle-label"><input type="checkbox" class="owned-toggle" data-id="marinara-sauce" checked> <span class="owned-text">owned</span></label></td>
+<td>~25 oz</td>
+<td data-v="0.14">~$0.14/oz</td>
+<td>~17 kcal · 0.7 g protein · 0.6 g fat · 2.3 g carbs per oz</td>
+<td data-v="1" title="Penne Bolognese with Broccoli (Meal Prep)">1</td></tr><tr data-cat="sauce" data-search="mayonnaise (light) kroger sauce">
+<td data-v="Mayonnaise (light)"><strong>Mayonnaise (light)</strong> <span class="brand">Kroger</span></td>
+<td data-v="sauce">sauce</td>
+<td data-v="1"><label class="owned-toggle-label"><input type="checkbox" class="owned-toggle" data-id="mayo" checked> <span class="owned-text">owned</span></label></td>
+<td>~15 oz (≈ 30 tbsp)</td>
+<td data-v="0.12">~$0.12/tbsp</td>
+<td>~35 kcal · 0 g protein · 3.5 g fat · 1 g carbs per tbsp</td>
+<td data-v="1" title="Sourdough Melt with Fried Egg">1</td></tr><tr data-cat="spice" data-search="onion powder mccormick spice">
+<td data-v="Onion Powder"><strong>Onion Powder</strong> <span class="brand">McCormick</span></td>
+<td data-v="spice">spice</td>
+<td data-v="1"><label class="owned-toggle-label"><input type="checkbox" class="owned-toggle" data-id="onion-powder" checked> <span class="owned-text">owned</span></label></td>
+<td>~2.62 oz (≈ 31 tsp)</td>
+<td data-v="0.19">~$0.19/tsp</td>
+<td>~7 kcal · 0.2 g protein · 0 g fat · 1.7 g carbs per tsp</td>
+<td data-v="6" title="Chicken Penne Alfredo (Meal Prep), Garlic Chicken &amp; Pesto Rice with Broccoli, Pan-Seared NY Strip with Crispy Paprika Potatoes, Penne Bolognese with Broccoli (Meal Prep), Pesto Chicken Penne with Broccoli (Meal Prep), Sourdough Melt with Fried Egg">6</td></tr><tr data-cat="spice" data-search="paprika mccormick spice">
+<td data-v="Paprika"><strong>Paprika</strong> <span class="brand">McCormick</span></td>
+<td data-v="spice">spice</td>
+<td data-v="1"><label class="owned-toggle-label"><input type="checkbox" class="owned-toggle" data-id="paprika" checked> <span class="owned-text">owned</span></label></td>
+<td>~2.12 oz (≈ 26 tsp)</td>
+<td data-v="0.23">~$0.23/tsp</td>
+<td>~6 kcal · 0.3 g protein · 0.3 g fat · 1.2 g carbs per tsp</td>
+<td data-v="7" title="Chicken Penne Alfredo (Meal Prep), Garlic Chicken &amp; Pesto Rice with Broccoli, Pan-Seared NY Strip with Crispy Paprika Potatoes, Penne Bolognese with Broccoli (Meal Prep), Pesto Chicken Penne with Broccoli (Meal Prep), Seasoned Soft Scrambled Eggs, Sourdough Melt with Fried Egg">7</td></tr><tr data-cat="dairy" data-search="parmesan, grated  dairy">
+<td data-v="Parmesan, grated"><strong>Parmesan, grated</strong></td>
+<td data-v="dairy">dairy</td>
+<td data-v="1"><label class="owned-toggle-label"><input type="checkbox" class="owned-toggle" data-id="parmesan-grated" checked> <span class="owned-text">owned</span></label></td>
+<td>~8 oz (≈ 2 cup)</td>
+<td data-v="1">$1.00/cup</td>
+<td>~430 kcal · 38 g protein · 28 g fat · 4 g carbs per cup</td>
+<td data-v="3" title="Chicken Penne Alfredo (Meal Prep), Penne Bolognese with Broccoli (Meal Prep), Pesto Chicken Penne with Broccoli (Meal Prep)">3</td></tr><tr data-cat="pasta" data-search="penne rigate (dry) trader joe's pasta">
+<td data-v="Penne Rigate (dry)"><strong>Penne Rigate (dry)</strong> <span class="brand">Trader Joe's</span></td>
+<td data-v="pasta">pasta</td>
+<td data-v="1"><label class="owned-toggle-label"><input type="checkbox" class="owned-toggle" data-id="penne" checked> <span class="owned-text">owned</span></label></td>
+<td>1 lb</td>
+<td data-v="0.081">$0.081/oz</td>
+<td>~105 kcal · 3.7 g protein · 0.5 g fat · 21 g carbs per oz</td>
+<td data-v="3" title="Chicken Penne Alfredo (Meal Prep), Penne Bolognese with Broccoli (Meal Prep), Pesto Chicken Penne with Broccoli (Meal Prep)">3</td></tr><tr data-cat="spice" data-search="red pepper flakes mccormick spice">
+<td data-v="Red Pepper Flakes"><strong>Red Pepper Flakes</strong> <span class="brand">McCormick</span></td>
+<td data-v="spice">spice</td>
+<td data-v="1"><label class="owned-toggle-label"><input type="checkbox" class="owned-toggle" data-id="red-pepper-flakes" checked> <span class="owned-text">owned</span></label></td>
+<td>~1.5 oz (≈ 24 tsp)</td>
+<td data-v="0.19">~$0.19/tsp</td>
+<td>~6 kcal · 0.3 g protein · 0.3 g fat · 1 g carbs per tsp</td>
+<td data-v="6" title="Chicken Penne Alfredo (Meal Prep), Garlic Chicken &amp; Pesto Rice with Broccoli, Pan-Seared NY Strip with Crispy Paprika Potatoes, Penne Bolognese with Broccoli (Meal Prep), Pesto Chicken Penne with Broccoli (Meal Prep), Sourdough Melt with Fried Egg">6</td></tr><tr data-cat="protein" data-search="roast beef (thin sliced, pre-cooked) kirkland protein">
+<td data-v="Roast Beef (thin sliced, pre-cooked)"><strong>Roast Beef (thin sliced, pre-cooked)</strong> <span class="brand">Kirkland</span></td>
+<td data-v="protein">protein</td>
+<td data-v="1"><label class="owned-toggle-label"><input type="checkbox" class="owned-toggle" data-id="roast-beef-sliced" checked> <span class="owned-text">owned</span></label></td>
+<td>14 oz</td>
+<td data-v="0.45">~$0.45/oz</td>
+<td>~45 kcal · 7 g protein · 1.5 g fat · 0.3 g carbs per oz</td>
+<td data-v="1" title="Sourdough Melt with Fried Egg">1</td></tr><tr data-cat="vegetable" data-search="russet potato (about 1 lb)  vegetable">
+<td data-v="Russet Potato (about 1 lb)"><strong>Russet Potato (about 1 lb)</strong></td>
+<td data-v="vegetable">vegetable</td>
+<td data-v="1"><label class="owned-toggle-label"><input type="checkbox" class="owned-toggle" data-id="potato-russet" checked> <span class="owned-text">owned</span></label></td>
+<td>1 lb (≈ 1 potato)</td>
+<td data-v="0.99">$0.99/potato</td>
+<td>~360 kcal · 9.5 g protein · 0.4 g fat · 82 g carbs per potato</td>
+<td data-v="2" title="Chicken Penne Alfredo (Meal Prep), Pan-Seared NY Strip with Crispy Paprika Potatoes">2</td></tr><tr data-cat="sauce" data-search="salsa herdez sauce">
+<td data-v="Salsa"><strong>Salsa</strong> <span class="brand">Herdez</span></td>
+<td data-v="sauce">sauce</td>
+<td data-v="1"><label class="owned-toggle-label"><input type="checkbox" class="owned-toggle" data-id="jarred-salsa" checked> <span class="owned-text">owned</span></label></td>
+<td>~2 cup</td>
+<td data-v="0.11">~$0.11/tbsp</td>
+<td>~4 kcal · 0.2 g protein · 0 g fat · 1 g carbs per tbsp</td>
+<td data-v="0" title=""><span class="badge no">unused</span></td></tr><tr data-cat="spice" data-search="salt  spice">
+<td data-v="Salt"><strong>Salt</strong></td>
+<td data-v="spice">spice</td>
+<td data-v="1"><label class="owned-toggle-label"><input type="checkbox" class="owned-toggle" data-id="salt" checked> <span class="owned-text">owned</span></label></td>
+<td>~26 oz (≈ 130 tsp)</td>
+<td data-v="0.02">$0.02/tsp</td>
+<td>~0 kcal · 0 g protein · 0 g fat · 0 g carbs per tsp</td>
+<td data-v="7" title="Chicken Penne Alfredo (Meal Prep), Garlic Chicken &amp; Pesto Rice with Broccoli, Pan-Seared NY Strip with Crispy Paprika Potatoes, Penne Bolognese with Broccoli (Meal Prep), Pesto Chicken Penne with Broccoli (Meal Prep), Seasoned Soft Scrambled Eggs, Sourdough Melt with Fried Egg">7</td></tr><tr data-cat="sauce" data-search="smoky mayo  sauce">
+<td data-v="Smoky Mayo"><strong>Smoky Mayo</strong> <span class="chip chip-opt">homemade</span></td>
+<td data-v="sauce">sauce</td>
+<td data-v="0"><span class="derived-owned" data-id="smoky-mayo"><span class="badge no">✗ not owned</span></span> <span class="meta">derived</span></td>
+<td>—</td>
+<td data-v="0.2056">~$0.206/tbsp</td>
+<td>~37.3 kcal · 0.1 g protein · 3.6 g fat · 1.5 g carbs per tbsp</td>
+<td data-v="1" title="Sourdough Melt with Fried Egg">1</td></tr><tr data-cat="sauce" data-search="spicy mayo  sauce">
+<td data-v="Spicy Mayo"><strong>Spicy Mayo</strong> <span class="chip chip-opt">homemade</span></td>
+<td data-v="sauce">sauce</td>
+<td data-v="0"><span class="derived-owned" data-id="spicy-mayo"><span class="badge no">✗ not owned</span></span> <span class="meta">derived</span></td>
+<td>—</td>
+<td data-v="0.2075">~$0.207/tbsp</td>
+<td>~36.8 kcal · 0.1 g protein · 3.5 g fat · 1.4 g carbs per tbsp</td>
+<td data-v="1" title="Sourdough Melt with Fried Egg">1</td></tr><tr data-cat="grain" data-search="white bread  grain">
+<td data-v="White Bread"><strong>White Bread</strong></td>
+<td data-v="grain">grain</td>
+<td data-v="1"><label class="owned-toggle-label"><input type="checkbox" class="owned-toggle" data-id="white-bread" checked> <span class="owned-text">owned</span></label></td>
+<td>~20 slices</td>
+<td data-v="0.15">~$0.15/slice</td>
+<td>~75 kcal · 2.5 g protein · 1 g fat · 14 g carbs per slice</td>
+<td data-v="1" title="Sourdough Melt with Fried Egg">1</td></tr></tbody></table></div>
+<h2>Cookware</h2><div class="controls"><input type="search" class="tfilter" data-table="t-cookware" placeholder="Search" aria-label="Search t-cookware"><select class="catfilter" data-table="t-cookware" aria-label="Category"><option value="">All categories</option><option>pot</option><option>pan</option><option>appliance</option><option>tool</option><option>bakeware</option></select></div>
+<div class="scroll"><table id="t-cookware" data-sortable><thead><tr><th scope="col" data-type="text" tabindex="0" role="button" aria-label="Sort by Item">Item</th><th scope="col" data-type="text" tabindex="0" role="button" aria-label="Sort by Category">Category</th><th scope="col" data-type="num" tabindex="0" role="button" aria-label="Sort by Owned">Owned</th><th scope="col" data-type="text" tabindex="0" role="button" aria-label="Sort by Size">Size</th><th scope="col" data-type="text" tabindex="0" role="button" aria-label="Sort by Tags">Tags</th><th scope="col" data-type="num" tabindex="0" role="button" aria-label="Sort by Used in">Used in</th></tr></thead><tbody><tr data-cat="pan" data-search="10.5&quot; frypan pan stovetop nonstick">
+<td data-v="10.5&quot; Frypan"><strong>10.5&quot; Frypan</strong></td><td data-v="pan">pan</td>
+<td data-v="1"><label class="owned-toggle-label"><input type="checkbox" class="owned-toggle" data-id="frypan-10-5in" checked> <span class="owned-text">owned</span></label></td>
+<td>10.5 inch</td><td>stovetop, nonstick</td>
+<td data-v="6" title="Chicken Penne Alfredo (Meal Prep), Garlic Chicken &amp; Pesto Rice with Broccoli, Pan-Seared NY Strip with Crispy Paprika Potatoes, Penne Bolognese with Broccoli (Meal Prep), Pesto Chicken Penne with Broccoli (Meal Prep), Seasoned Soft Scrambled Eggs">6</td></tr><tr data-cat="pot" data-search="1qt covered saucepan pot stovetop nonstick lidded">
+<td data-v="1QT Covered Saucepan"><strong>1QT Covered Saucepan</strong></td><td data-v="pot">pot</td>
+<td data-v="1"><label class="owned-toggle-label"><input type="checkbox" class="owned-toggle" data-id="saucepan-1qt-covered" checked> <span class="owned-text">owned</span></label></td>
+<td>1 quart</td><td>stovetop, nonstick, lidded</td>
+<td data-v="4" title="Chicken Penne Alfredo (Meal Prep), Penne Bolognese with Broccoli (Meal Prep), Pesto Chicken Penne with Broccoli (Meal Prep), Seasoned Soft Scrambled Eggs">4</td></tr><tr data-cat="pot" data-search="2qt covered saucepan pot stovetop nonstick lidded">
+<td data-v="2QT Covered Saucepan"><strong>2QT Covered Saucepan</strong></td><td data-v="pot">pot</td>
+<td data-v="1"><label class="owned-toggle-label"><input type="checkbox" class="owned-toggle" data-id="saucepan-2qt-covered" checked> <span class="owned-text">owned</span></label></td>
+<td>2 quart</td><td>stovetop, nonstick, lidded</td>
+<td data-v="5" title="Chicken Penne Alfredo (Meal Prep), Pan-Seared NY Strip with Crispy Paprika Potatoes, Penne Bolognese with Broccoli (Meal Prep), Pesto Chicken Penne with Broccoli (Meal Prep), Seasoned Soft Scrambled Eggs">5</td></tr><tr data-cat="tool" data-search="4 nylon tools (spatula, slotted turner, slotted spoon, spoon) tool utensil nonstick-safe">
+<td data-v="4 Nylon Tools (Spatula, Slotted Turner, Slotted Spoon, Spoon)"><strong>4 Nylon Tools (Spatula, Slotted Turner, Slotted Spoon, Spoon)</strong></td><td data-v="tool">tool</td>
+<td data-v="1"><label class="owned-toggle-label"><input type="checkbox" class="owned-toggle" data-id="nylon-tools-4pc" checked> <span class="owned-text">owned</span></label></td>
+<td>—</td><td>utensil, nonstick-safe</td>
+<td data-v="7" title="Chicken Penne Alfredo (Meal Prep), Garlic Chicken &amp; Pesto Rice with Broccoli, Pan-Seared NY Strip with Crispy Paprika Potatoes, Penne Bolognese with Broccoli (Meal Prep), Pesto Chicken Penne with Broccoli (Meal Prep), Seasoned Soft Scrambled Eggs, Sourdough Melt with Fried Egg">7</td></tr><tr data-cat="pot" data-search="5qt covered dutch oven pot stovetop nonstick lidded">
+<td data-v="5QT Covered Dutch Oven"><strong>5QT Covered Dutch Oven</strong></td><td data-v="pot">pot</td>
+<td data-v="1"><label class="owned-toggle-label"><input type="checkbox" class="owned-toggle" data-id="dutch-oven-5qt-covered" checked> <span class="owned-text">owned</span></label></td>
+<td>5 quart</td><td>stovetop, nonstick, lidded</td>
+<td data-v="4" title="Chicken Penne Alfredo (Meal Prep), Penne Bolognese with Broccoli (Meal Prep), Pesto Chicken Penne with Broccoli (Meal Prep), Seasoned Soft Scrambled Eggs">4</td></tr><tr data-cat="pan" data-search="8&quot; frypan pan stovetop nonstick">
+<td data-v="8&quot; Frypan"><strong>8&quot; Frypan</strong></td><td data-v="pan">pan</td>
+<td data-v="1"><label class="owned-toggle-label"><input type="checkbox" class="owned-toggle" data-id="frypan-8in" checked> <span class="owned-text">owned</span></label></td>
+<td>8 inch</td><td>stovetop, nonstick</td>
+<td data-v="4" title="Chicken Penne Alfredo (Meal Prep), Penne Bolognese with Broccoli (Meal Prep), Seasoned Soft Scrambled Eggs, Sourdough Melt with Fried Egg">4</td></tr><tr data-cat="appliance" data-search="chefman rice cooker appliance rice-cooker">
+<td data-v="Chefman Rice Cooker"><strong>Chefman Rice Cooker</strong></td><td data-v="appliance">appliance</td>
+<td data-v="1"><label class="owned-toggle-label"><input type="checkbox" class="owned-toggle" data-id="chefman-rice-cooker" checked> <span class="owned-text">owned</span></label></td>
+<td>—</td><td>rice-cooker</td>
+<td data-v="1" title="Garlic Chicken &amp; Pesto Rice with Broccoli">1</td></tr><tr data-cat="appliance" data-search="chefman toaster appliance toaster">
+<td data-v="Chefman Toaster"><strong>Chefman Toaster</strong></td><td data-v="appliance">appliance</td>
+<td data-v="1"><label class="owned-toggle-label"><input type="checkbox" class="owned-toggle" data-id="chefman-toaster" checked> <span class="owned-text">owned</span></label></td>
+<td>—</td><td>toaster</td>
+<td data-v="0" title=""><span class="badge no">unused</span></td></tr></tbody></table></div>
+<details class="generator"><summary>Add a new item (generates YAML)</summary>
+  <p class="meta">Fills in a YAML file for you to save in the repo, then run the build.</p>
+  <div id="gen" data-food-cats="protein,dairy,vegetable,fruit,grain,pasta,sauce,fat,spice,pantry,other" data-cookware-cats="pot,pan,appliance,tool,bakeware" data-units="pinch,tsp,tbsp,cup,qt,ml,l,oz,lb,g,kg,unit"></div>
+</details>
+<script src="data.js"></script>
+<script src="shared.js"></script>
+<script src="common.js"></script>
+<script src="catalog.js"></script>
+</body></html>

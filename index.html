@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#161616" media="(prefers-color-scheme: dark)">
+<meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Recipes">
+<link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="icon.svg">
+<title>Recipes</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<nav><a href="index.html">Recipes</a><a href="catalog.html">Catalog</a></nav>
+<div id="ovbanner" class="banner" hidden></div>
+<h1>Recipes</h1>
+<div class="controls">
+  <label>Sort <select id="sort">
+    <option value="title">Name</option>
+    <option value="cost">Cost / serving</option>
+    <option value="costPer100">Cost per 100 kcal</option>
+    <option value="calories">Calories / serving</option>
+    <option value="protein">Protein / serving</option>
+    <option value="proteinPerDollar">Protein per dollar</option>
+    <option value="time">Time</option>
+  </select></label>
+  <button type="button" id="dir" aria-label="Toggle sort direction"></button>
+  <label><input type="checkbox" id="makeable"> Hide recipes I can't make</label>
+</div>
+<details class="filters" id="filters" open><summary id="filtersum">Filter by ingredient</summary>
+  <p class="meta">Tap an ingredient once to include it (✓), twice to exclude it (✕). Recipes show the numbers for the swaps that match.</p>
+  <div class="controls">
+    <input type="search" id="chipsearch" placeholder="Search ingredients" aria-label="Search ingredients">
+    <label>Match <select id="any"><option value="all">all included</option><option value="any">any included</option></select></label>
+    <button type="button" id="clearfilters">Clear filters</button>
+  </div>
+  <div class="chips" id="chips-main"><button type="button" class="chip-btn" data-id="alfredo-sauce" data-name="Alfredo Sauce" data-state="off">Alfredo Sauce</button><button type="button" class="chip-btn" data-id="pesto" data-name="Basil Pesto" data-state="off">Basil Pesto</button><button type="button" class="chip-btn" data-id="beef-steak-choice-angus" data-name="Beef Steak" data-state="off">Beef Steak</button><button type="button" class="chip-btn" data-id="broccoli-fresh" data-name="Broccoli Florets" data-state="off">Broccoli Florets</button><button type="button" class="chip-btn" data-id="butter" data-name="Butter" data-state="off">Butter</button><button type="button" class="chip-btn" data-id="chicken-tenders-raw" data-name="Chicken Tenders" data-state="off">Chicken Tenders</button><button type="button" class="chip-btn" data-id="sourdough-bread" data-name="Crushed Wheat Sourdough" data-state="off">Crushed Wheat Sourdough</button><button type="button" class="chip-btn" data-id="egg" data-name="Egg" data-state="off">Egg</button><button type="button" class="chip-btn" data-id="ground-beef-91-9" data-name="Ground Beef" data-state="off">Ground Beef</button><button type="button" class="chip-btn" data-id="ham-sliced" data-name="Ham" data-state="off">Ham</button><button type="button" class="chip-btn" data-id="havarti-sliced" data-name="Havarti Cheese" data-state="off">Havarti Cheese</button><button type="button" class="chip-btn" data-id="jasmine-rice" data-name="Jasmine Rice" data-state="off">Jasmine Rice</button><button type="button" class="chip-btn" data-id="marinara-sauce" data-name="Marinara Sauce" data-state="off">Marinara Sauce</button><button type="button" class="chip-btn" data-id="parmesan-grated" data-name="Parmesan, grated" data-state="off">Parmesan, grated</button><button type="button" class="chip-btn" data-id="penne" data-name="Penne Rigate" data-state="off">Penne Rigate</button><button type="button" class="chip-btn" data-id="roast-beef-sliced" data-name="Roast Beef" data-state="off">Roast Beef</button><button type="button" class="chip-btn" data-id="potato-russet" data-name="Russet Potato" data-state="off">Russet Potato</button><button type="button" class="chip-btn" data-id="smoky-mayo" data-name="Smoky Mayo" data-state="off">Smoky Mayo</button><button type="button" class="chip-btn" data-id="spicy-mayo" data-name="Spicy Mayo" data-state="off">Spicy Mayo</button><button type="button" class="chip-btn" data-id="white-bread" data-name="White Bread" data-state="off">White Bread</button></div>
+  <details><summary>Seasonings and basics (8)</summary><div class="chips" id="chips-basics"><button type="button" class="chip-btn" data-id="black-pepper" data-name="Black Pepper" data-state="off">Black Pepper</button><button type="button" class="chip-btn" data-id="canola-oil" data-name="Canola Oil" data-state="off">Canola Oil</button><button type="button" class="chip-btn" data-id="garlic-powder" data-name="Garlic Powder" data-state="off">Garlic Powder</button><button type="button" class="chip-btn" data-id="italian-seasoning" data-name="Italian Seasoning" data-state="off">Italian Seasoning</button><button type="button" class="chip-btn" data-id="onion-powder" data-name="Onion Powder" data-state="off">Onion Powder</button><button type="button" class="chip-btn" data-id="paprika" data-name="Paprika" data-state="off">Paprika</button><button type="button" class="chip-btn" data-id="red-pepper-flakes" data-name="Red Pepper Flakes" data-state="off">Red Pepper Flakes</button><button type="button" class="chip-btn" data-id="salt" data-name="Salt" data-state="off">Salt</button></div></details>
+</details>
+<p class="meta" id="count" aria-live="polite"></p>
+<p class="meta">Values are per serving. Open a recipe to see which prices and nutrition values are estimates.</p>
+<div id="list"><article class="card" data-id="chicken-penne-alfredo">
+  <div class="card-head"><a class="card-title" href="recipe-chicken-penne-alfredo.html">Chicken Penne Alfredo (Meal Prep)</a> <span class="badge ok">✓ Makeable now</span></div>
+  
+  <div class="stats compact">
+    <div class="stat stat-main"><span class="stat-v">$3.86</span><span class="stat-l">cost / serving</span></div>
+    <div class="stat "><span class="stat-v">871</span><span class="stat-l">calories</span></div>
+    <div class="stat "><span class="stat-v">53 g</span><span class="stat-l">protein</span></div>
+    <div class="stat "><span class="stat-v">30</span><span class="stat-l">minutes (est.)</span></div>
+  </div>
+  <div class="meta">Cookware: Dutch oven, frypan, nylon tools</div>
+  <div class="meta"><span class="vlabel">Heat:</span> Red Pepper Flakes / <strong>none</strong></div><div class="meta"><span class="vlabel">Vegetable:</span> <strong>Broccoli Florets</strong> / Russet Potato</div>
+  <div class="meta summary">Uses jarred Alfredo, which holds up better in the fridge and microwave than homemade. Broccoli, or russet potatoes instead. Dinner tonight plus 3 lunches.</div>
+  <label class="addlist"><input type="checkbox" class="pickrecipe" value="chicken-penne-alfredo"> Add to shopping list</label>
+</article>
+<article class="card" data-id="garlic-chicken-pesto-rice-with-broccoli">
+  <div class="card-head"><a class="card-title" href="recipe-garlic-chicken-pesto-rice-with-broccoli.html">Garlic Chicken &amp; Pesto Rice with Broccoli</a> <span class="badge ok">✓ Makeable now</span></div>
+  
+  <div class="stats compact">
+    <div class="stat stat-main"><span class="stat-v">$5.27</span><span class="stat-l">cost / serving</span></div>
+    <div class="stat "><span class="stat-v">862</span><span class="stat-l">calories</span></div>
+    <div class="stat "><span class="stat-v">62 g</span><span class="stat-l">protein</span></div>
+    <div class="stat "><span class="stat-v">40</span><span class="stat-l">minutes</span></div>
+  </div>
+  <div class="meta">Cookware: rice cooker, frypan, nylon tools</div>
+  <div class="meta"><span class="vlabel">Broccoli heat:</span> Red Pepper Flakes / <strong>none</strong></div>
+  <div class="meta summary">Seasoned seared chicken pieces and garlic broccoli over rice cooker jasmine rice stirred with basil pesto.</div>
+  <label class="addlist"><input type="checkbox" class="pickrecipe" value="garlic-chicken-pesto-rice-with-broccoli"> Add to shopping list</label>
+</article>
+<article class="card" data-id="pan-seared-ny-strip-with-crispy-paprika-potatoes">
+  <div class="card-head"><a class="card-title" href="recipe-pan-seared-ny-strip-with-crispy-paprika-potatoes.html">Pan-Seared NY Strip with Crispy Paprika Potatoes</a> <span class="badge ok">✓ Makeable now</span></div>
+  
+  <div class="stats compact">
+    <div class="stat stat-main"><span class="stat-v">$7.66</span><span class="stat-l">cost / serving</span></div>
+    <div class="stat "><span class="stat-v">855</span><span class="stat-l">calories</span></div>
+    <div class="stat "><span class="stat-v">51 g</span><span class="stat-l">protein</span></div>
+    <div class="stat "><span class="stat-v">36</span><span class="stat-l">minutes (est.)</span></div>
+  </div>
+  <div class="meta">Cookware: frypan, nylon tools, 2qt saucepan</div>
+  <div class="meta"><span class="vlabel">Heat:</span> Red Pepper Flakes / <strong>none</strong></div>
+  <div class="meta summary">One 10.5&quot; frypan, pantry seasonings only. Crispy russets with a garlicky, peppery steak.</div>
+  <label class="addlist"><input type="checkbox" class="pickrecipe" value="pan-seared-ny-strip-with-crispy-paprika-potatoes"> Add to shopping list</label>
+</article>
+<article class="card" data-id="penne-bolognese-with-broccoli">
+  <div class="card-head"><a class="card-title" href="recipe-penne-bolognese-with-broccoli.html">Penne Bolognese with Broccoli (Meal Prep)</a> <span class="badge ok">✓ Makeable now</span></div>
+  
+  <div class="stats compact">
+    <div class="stat stat-main"><span class="stat-v">$3.73</span><span class="stat-l">cost / serving</span></div>
+    <div class="stat "><span class="stat-v">711</span><span class="stat-l">calories</span></div>
+    <div class="stat "><span class="stat-v">46 g</span><span class="stat-l">protein</span></div>
+    <div class="stat "><span class="stat-v">26</span><span class="stat-l">minutes (est.)</span></div>
+  </div>
+  <div class="meta">Cookware: Dutch oven, frypan, nylon tools</div>
+  
+  <div class="meta summary">Dinner tonight plus 3 lunches. Seasoned beef and a reduced, thicker sauce.</div>
+  <label class="addlist"><input type="checkbox" class="pickrecipe" value="penne-bolognese-with-broccoli"> Add to shopping list</label>
+</article>
+<article class="card" data-id="pesto-chicken-penne-with-broccoli">
+  <div class="card-head"><a class="card-title" href="recipe-pesto-chicken-penne-with-broccoli.html">Pesto Chicken Penne with Broccoli (Meal Prep)</a> <span class="badge ok">✓ Makeable now</span></div>
+  
+  <div class="stats compact">
+    <div class="stat stat-main"><span class="stat-v">$4.06</span><span class="stat-l">cost / serving</span></div>
+    <div class="stat "><span class="stat-v">761</span><span class="stat-l">calories</span></div>
+    <div class="stat "><span class="stat-v">54 g</span><span class="stat-l">protein</span></div>
+    <div class="stat "><span class="stat-v">30</span><span class="stat-l">minutes (est.)</span></div>
+  </div>
+  <div class="meta">Cookware: Dutch oven, frypan, nylon tools</div>
+  <div class="meta"><span class="vlabel">Heat:</span> Red Pepper Flakes / <strong>none</strong></div><div class="meta"><span class="vlabel">Creaminess:</span> Alfredo Sauce / <strong>none</strong></div>
+  <div class="meta summary">Pesto, parmesan and starchy pasta water make the sauce, so no Alfredo is needed. Dinner tonight plus 3 lunches.</div>
+  <label class="addlist"><input type="checkbox" class="pickrecipe" value="pesto-chicken-penne-with-broccoli"> Add to shopping list</label>
+</article>
+<article class="card" data-id="seasoned-soft-scrambled-eggs">
+  <div class="card-head"><a class="card-title" href="recipe-seasoned-soft-scrambled-eggs.html">Seasoned Soft Scrambled Eggs</a> <span class="badge ok">✓ Makeable now</span></div>
+  
+  <div class="stats compact">
+    <div class="stat stat-main"><span class="stat-v">$1.95</span><span class="stat-l">cost / serving</span></div>
+    <div class="stat "><span class="stat-v">397</span><span class="stat-l">calories</span></div>
+    <div class="stat "><span class="stat-v">26 g</span><span class="stat-l">protein</span></div>
+    <div class="stat "><span class="stat-v">6</span><span class="stat-l">minutes (est.)</span></div>
+  </div>
+  <div class="meta">Cookware: any nonstick, nylon tools</div>
+  <div class="meta"><span class="vlabel">Cooking fat:</span> <strong>Butter</strong> / Canola Oil</div><div class="meta"><span class="vlabel">Ham:</span> Ham / <strong>none</strong></div>
+  <div class="meta summary">Creamy, fluffy eggs with a savory spice blend. Just eggs, pantry seasonings, and a little butter.</div>
+  <label class="addlist"><input type="checkbox" class="pickrecipe" value="seasoned-soft-scrambled-eggs"> Add to shopping list</label>
+</article>
+<article class="card" data-id="sourdough-melt-with-fried-egg">
+  <div class="card-head"><a class="card-title" href="recipe-sourdough-melt-with-fried-egg.html">Sourdough Melt with Fried Egg</a> <span class="badge ok">✓ Makeable now</span></div>
+  
+  <div class="stats compact">
+    <div class="stat stat-main"><span class="stat-v">$4.59</span><span class="stat-l">cost / serving</span></div>
+    <div class="stat "><span class="stat-v">984</span><span class="stat-l">calories</span></div>
+    <div class="stat "><span class="stat-v">60 g</span><span class="stat-l">protein</span></div>
+    <div class="stat "><span class="stat-v">11</span><span class="stat-l">minutes (est.)</span></div>
+  </div>
+  <div class="meta">Cookware: frypan, nylon tools</div>
+  <div class="meta"><span class="vlabel">Bread:</span> <strong>Crushed Wheat Sourdough</strong> / White Bread</div><div class="meta"><span class="vlabel">Spread:</span> <strong>Spicy Mayo</strong> / Smoky Mayo</div><div class="meta"><span class="vlabel">Meat:</span> <strong>Roast Beef</strong> / Ham</div>
+  <div class="meta summary">A crispy toasted melt with creamy Havarti, roast beef, spicy mayo, and runny seasoned eggs. No lid needed.</div>
+  <label class="addlist"><input type="checkbox" class="pickrecipe" value="sourdough-melt-with-fried-egg"> Add to shopping list</label>
+</article></div>
+<section id="shopping" hidden>
+  <h2>Shopping list</h2>
+  <div id="shoplist"></div>
+  <div class="controls"><button type="button" id="copylist">Copy as text</button><button type="button" id="clearlist">Clear list</button><span class="meta" id="copied" aria-live="polite"></span></div>
+</section>
+<a id="listbar" class="bottombar" href="#shopping" hidden></a>
+<script src="data.js"></script>
+<script src="shared.js"></script>
+<script src="common.js"></script>
+<script src="index.js"></script>
+</body></html>
